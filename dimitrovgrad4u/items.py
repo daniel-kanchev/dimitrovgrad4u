@@ -1,12 +1,10 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
-
 import scrapy
 
 
-class Dimitrovgrad4UItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class Article(scrapy.Item):
+    title = scrapy.Field()
+    date = scrapy.Field()
+    author = scrapy.Field()
+    categories = scrapy.Field()
+    link = scrapy.Field()
+    content = scrapy.Field()
